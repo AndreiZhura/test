@@ -17,12 +17,28 @@ position: absolute;
 
 .square-two:hover{
 
-    transform: scale(1.5) translate(100px) rotate(45deg);
-
-
 }
 
 .page{
     border:1px solid red;
-    
+    position: relative;
+}
+
+button{
+    border-radius: 10px;
+    background-color: coral;
+    transition-property: transform, backgroudn-color, scale;
+    transition-duration: 3s;
+    width: 150px;
+    height: 150px;
+    right: 0px;
+    top: 50%;
+    position: absolute;
+}
+
+button:hover{
+    transform: scale(1.2);
+    background-color: aquamarine;
+  transform: translate(-100% , -100%);
+   
 }
