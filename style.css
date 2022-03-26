@@ -29,19 +29,29 @@ transition-duration: 1s;
 button{
     border-radius: 10px;
     background-color: coral;
-    transition-property: transform, backgroudn-color, scale;
-    transition-duration: 3s;
     width: 150px;
     height: 150px;
     right: 0px;
     top: 50%;
+    transition-duration: 3s;
     position: absolute;
+    animation-name:but;
+    animation-duration: 5s; 
+    
 }
 
 button:hover{
-    transform: scale(1.2);
-    background-color: aquamarine;
-    transform: translate(-100% , -100%);
+ transform: scale(1.5);
+background-color: chartreuse;
+transform: translateX( -100%);
+}
 
-   
+
+@keyframes but{
+ 0%{
+opacity: 0;
+ }
+ 100%{
+opacity: 1;
+ }
 }
